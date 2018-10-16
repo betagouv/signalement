@@ -26,7 +26,7 @@ class Migration_Init extends CI_Migration {
                                 'type' => 'TEXT[]'
                         ),
                         'pictures' => array(
-                                'type' => 'UUID[]'
+                                'type' => 'OID[]'
                         ),
                         'description' => array(
                                 'type' => 'TEXT',
@@ -41,8 +41,6 @@ class Migration_Init extends CI_Migration {
                 ));
                 $this->dbforge->add_key('id', TRUE);
                 $this->dbforge->create_table('reports');
-
-                
         }
 
         public function down()
