@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>BétaGouv - Signalement</title>
+    <title>BetaGouv - Signalement</title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -37,12 +37,12 @@
                     <input class="form-control" id="place" placeholder="Nom du commerçant ...">
                 </div>
                 <div class="form-group mb-4">
-                    <label for="place">Adresse</label>
-                    <input class="form-control" id="place" placeholder="numéro, rue et ville ...">
+                    <label for="place-address">Adresse</label>
+                    <input class="form-control" id="place-address" placeholder="numéro, rue et ville ...">
                 </div>
                 <div class="form-group">
-                    <label for="place-categorie">Quelle est la catégorie de cet établissement ? </label>
-                    <select class="form-control form-control-lg chosen-select" id="place-categorie" name="place-categorie" data-placeholder="Choisissez ...">
+                    <label for="place-category">Quelle est la catégorie de cet établissement ? </label>
+                    <select class="form-control form-control-lg chosen-select" id="place-category" name="place-category" data-placeholder="Choisissez ...">
 
                         <option value="Café / Restaurant">Café / Restaurant</option>
                         <option value="Grande surface / Supérette">Grande surface / Supérette</option>
@@ -62,8 +62,8 @@
                 </div>
                 <div class="form-group mb-4">
                     <label for="anomalies">Précisez</label>
-                    <select class= "form-control form-control-lg chosen-select" id="anomalies" name="anomalies[]" multiple
-                            data-placeholder="Choisissez une ou plusieurs anomalies ...">
+                    <select class= "form-control form-control-lg chosen-select" id="anomalies" name="anomalies[]"
+                            data-placeholder="Choisissez une anomalie ...">
                         <option>Personnel sans coiffe ou gants</option>
                         <option>Restaurant sale</option>
                         <option>Présence de rat ou d'insecte</option>
