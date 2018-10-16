@@ -25,7 +25,7 @@
         </div>
     </div>
 </header>
-<div class="container">
+<div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
             <p class="font-weight-bold mb-3">Consommateurs, vous pouvez déposer un signalement afin de faire réagir les
@@ -43,10 +43,11 @@
                 <div class="form-group">
                     <label for="place-categorie">Quelle est la catégorie de cet établissement ? </label>
                     <select class="form-control form-control-lg chosen-select" id="place-categorie" name="place-categorie" data-placeholder="Choisissez ...">
-                        <option>Café / Restaurant</option>
-                        <option>Grand surface / Supérette</option>
-                        <option>Boulanger / Boucher</option>
-                        <option>Magasin non alimentaire</option>
+
+                        <option value="Café / Restaurant">Café / Restaurant</option>
+                        <option value="Grande surface / Supérette">Grande surface / Supérette</option>
+                        <option value="Boulanger / Boucher">Boulanger / Boucher</option>
+                        <option value="Magasin non alimentaire">Magasin non alimentaire</option>
                     </select>
                 </div>
                 <div class="form-group">
