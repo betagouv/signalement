@@ -11,10 +11,12 @@ services:
     image: php
     environment:
       DATABASE_URL: "postgresl://signalement:mysecretpassword@localhost/signalement"
+      LOG_THRESHOLD: "4"
+      BASE_URL: "http://localhost:9010/"
     volumes:
      - .:/code
     working_dir: /code
-    command: php -S localhost:9010
+    command: php -S 0.0.0.0:9010
     ports: 
      - "9010:9010"
     links:
