@@ -3,6 +3,8 @@
 jQuery(document).ready(function ($) {
 
     //  multiple select
-   $('.chosen-select').chosen({width: '100%', allow_single_deselect: true});
+   $('.chosen-select').chosen({width: '100%'});
 
+   // single select
+   $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
 });

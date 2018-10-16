@@ -29,8 +29,8 @@
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
             <p class="font-weight-bold mb-3">Consommateurs, vous pouvez déposer un signalement afin de faire réagir les
-                professionnels et informer la DGCCRF</p>
-
+                professionnels et informer la DGCCRF
+            </p>
             <form>
                 <div class="form-group">
                     <label for="place">Etablissement</label>
@@ -98,9 +98,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<script src="<?php echo base_url() . "assets/js/bootstrap.min.js" ?>"></script>
+<script src="<?php echo base_url() . "assets/js/bootstrap.bundle.min.js" ?>"></script>
+<script src="<?php echo base_url() . "assets/js/bootstrap.min.js.map" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/chosen.jquery.min.js" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/main.js" ?>"></script>
 </body>
