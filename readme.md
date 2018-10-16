@@ -10,4 +10,4 @@ Plus d'information ici : https://beta.gouv.fr/startup/signalement.html
    - DATABASE_URL
    - BASE_URL
 - Initialiser ou mettre à jour la base de donnée : `php index.php migrate`
-   - La variable DATABASE_URL de base de donnée doit être configuré
+   - La variable DATABASE_URL de base de donnée doit être configuré (`DATABASE_URL="posgres://user:password@localhost/signalement" php index.php migrate`)
