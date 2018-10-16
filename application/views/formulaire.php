@@ -1,108 +1,106 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>Signalement</title>
+    <meta charset="utf-8">
+    <title>BétaGouv - Signalement</title>
 
-	<style type="text/css">
-	
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	.container {
-		max-width: 500px;
-	}
-
-	</style>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/style.css" ?>"/>
+    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/bootstrap-chosen.css" ?>"/>
 </head>
-<body class="bg-light">
-	<header>
-		<nav class="navbar navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">signalement.beta.gouv.fr
-			</a>
-		</nav>
-	</header>
-	<div class="container">
-			<div class="row">
-			<div class="col-md-12">
-				<h2>Signaler un truc</h2>
-		<form>
-			<div class="form-group">
-				<label for="place">Lieu du signalement : </label>
-				<input class="form-control" id="place" placeholder="Supermarché Toto à Paris">
-			</div>
-			<div class="form-group">
-				<label for="place-type">Quel est la catégorie du lieu ?  </label>
-				<select class="form-control form-control-lg" id="place-type">
-					<option>Café / Restaurant</option>
-					<option>Grand surface / Supérette</option>
-					<option>Boulanger / Boucher</option>
-					<option>Magasin non alimentaire</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="type">Quel est la catégorie du problème avez-vous ?  </label>
-				<select class="form-control form-control-lg" id="type">
-					<option>Accueil</option>
-					<option>Paiement</option>
-					<option>Prix</option>
-					<option>Produit</option>
-					<option>Autre</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="type">Quel type de problème avez-vous ?  </label>
-				<select class="form-control form-control-lg" id="type">
-					<option>Personnel sans coiffe ou gants</option>
-					<option>Restaurant sale</option>
-					<option>Présence de rat ou d'insecte</option>
-					<option>Problème de température (ex: vitrine réfrigérée)</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="picture">Ajouter une photo</label>
-				<input type="file" class="form-control-file" id="picture">
-			</div>
-			<div class="form-group">
-				<label for="description">Description rapide de votre signalement</label>
-				<textarea class="form-control" id="description" rows="3" maxlength="200"></textarea>
-			</div>
-			<div class="form-group">
-				<label for="name">Votre nom et prénom : </label>
-				<input class="form-control" id="name" placeholder="Jean Dupont">
-			</div>
-			<div class="form-group">
-				<label for="email">Votre email : </label>
-				<input type="email" class="form-control" id="email" placeholder="john@gmail.com">
-			</div>
-			<button type="submit" class="btn btn-primary btn-lg btn-block">Envoyer le signalement</button>
-		</form>
-</div>
-</div>
-	</div>
+<body>
+<header class="mb-4">
+    <div class="container">
+        <div class="row">
+            <div id="logo-me-title-wrapper">
+                <img src="<?php echo base_url() . 'assets/images/ministere-economie.png'; ?>"
+                     alt="logo Ministère de l'Économie" class="m-3 mr-5" id="logo-DGCCRF"/>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <h1 class="align-middle text-center">Signalement</h1>
+            </div>
+            <!-- <img src="<?php echo base_url() . 'assets/images/DGCCRF2011_184x76.jpg'; ?>" alt="logo DGCCRF" class="m-3" id="logo-me" />-->
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
+            <p class="font-weight-bold mb-3">Consommateurs, vous pouvez déposer un signalement afin de faire réagir les
+                professionnels et informer la DGCCRF</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="place">Etablissement</label>
+                    <input class="form-control" id="place" placeholder="Nom du commerçant ...">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="place">Adresse</label>
+                    <input class="form-control" id="place" placeholder="numéro, rue et ville ...">
+                </div>
+                <div class="form-group">
+                    <label for="place-categorie">Quelle est la catégorie de cet établissement ? </label>
+                    <select class="form-control form-control-lg chosen-select" id="place-categorie" name="place-categorie" data-placeholder="Choisissez ...">
+                        <option>Café / Restaurant</option>
+                        <option>Grand surface / Supérette</option>
+                        <option>Boulanger / Boucher</option>
+                        <option>Magasin non alimentaire</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type">Quel type d'anomalie avez vous constaté ? </label>
+                    <select class="form-control form-control-lg chosen-select" id="type" name="type" data-placeholder="Choisissez ...">
+                        <option>Accueil</option>
+                        <option>Paiement</option>
+                        <option>Prix</option>
+                        <option>Produit</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="anomalies">Précisez</label>
+                    <select class= "form-control form-control-lg chosen-select" id="anomalies" name="anomalies[]" multiple
+                            data-placeholder="Choisissez une ou plusieurs anomalies ...">
+                        <option>Personnel sans coiffe ou gants</option>
+                        <option>Restaurant sale</option>
+                        <option>Présence de rat ou d'insecte</option>
+                        <option>Problème de température (ex: vitrine réfrigérée)</option>
+                    </select>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="picture">Ajouter une photo</label>
+                    <input type="file" class="form-control-file" id="picture">
+                </div>
+                <div class="form-grou mb-4">
+                    <label for="description">Description de votre signalement</label>
+                    <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="name">Vos nom et prénom</label>
+                    <input class="form-control" id="name" placeholder="Jean Dupont">
+                </div>
+                <div class="form-group mb-5">
+                    <label for="email">Votre email </label>
+                    <input type="email" class="form-control" id="email" placeholder="john@gmail.com">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Signaler</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="<?php echo base_url() . "assets/js/chosen.jquery.min.js" ?>"></script>
+<script src="<?php echo base_url() . "assets/js/main.js" ?>"></script>
 </body>
 </html>

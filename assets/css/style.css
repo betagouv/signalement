@@ -1,0 +1,32 @@
+/* HEADER ------------------- */
+header {
+    background-color: #e6e6ea;
+}
+
+#logo-DGCCRF {
+    width:120px;
+}
+
+#logo-me-title-wrapper {
+    display: table-cell;
+}
+
+#logo-me-title-wrapper h1 {
+    display: inline-block;
+}
+
+
+/* FORM ------------------- */
+
+
+.btn {
+    background-color: #0e4391;
+    opacity: 0.8;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus{
+    background-color: #0e4391!important;
+    opacity: 1;
+}
