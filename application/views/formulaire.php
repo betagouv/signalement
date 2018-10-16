@@ -79,6 +79,7 @@
                     <label for="description">Description de votre signalement</label>
                     <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
                 </div>
+                <p> Vous êtes invité à vous identifier pour valider votre signalement. Votre signalement restera anonyme pour le professionnel. Seul la DGCCRF a accès à votre identité</p>
                 <div class="form-group">
                     <label for="name">Vos nom et prénom</label>
                     <input class="form-control" id="name" placeholder="Prénom Nom ...">
