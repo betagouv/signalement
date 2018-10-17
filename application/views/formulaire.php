@@ -6,10 +6,10 @@
     <title>BetaGouv - Signalement</title>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/style.css" ?>"/>
+    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/bootstrap.min.css" ?>">
     <link rel="stylesheet" href="<?php echo base_url() . "assets/css/bootstrap-chosen.css" ?>"/>
+    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/style.css" ?>"/>
+
 </head>
 <body>
 <header class="mb-4">
@@ -29,16 +29,12 @@
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
             <p class="font-weight-bold mb-3">Consommateurs, vous pouvez déposer un signalement afin de faire réagir les
-                professionnels et informer la DGCCRF</p>
-
+                professionnels et informer la DGCCRF
+            </p>
             <form>
                 <div class="form-group">
                     <label for="place">Etablissement</label>
                     <input class="form-control" id="place" placeholder="Nom du commerçant ...">
-                </div>
-                <div class="form-group mb-4">
-                    <label for="place-address">Adresse</label>
-                    <input class="form-control" id="place-address" placeholder="numéro, rue et ville ...">
                 </div>
                 <div class="form-group">
                     <label for="place-category">Quelle est la catégorie de cet établissement ? </label>
@@ -62,7 +58,7 @@
                 </div>
                 <div class="form-group mb-4">
                     <label for="anomalies">Précisez</label>
-                    <select class= "form-control form-control-lg chosen-select" id="anomalies" name="anomalies[]"
+                    <select class= "form-control form-control-lg chosen-select" id="anomalies" name="anomalies"
                             data-placeholder="Choisissez une anomalie ...">
                         <option>Personnel sans coiffe ou gants</option>
                         <option>Restaurant sale</option>
@@ -71,6 +67,11 @@
                     </select>
                 </div>
                 <div class="form-group mb-4">
+                    <label for="place-address">Adresse</label>
+                    <input class="form-control" id="place-address" placeholder="numéro, rue et ville ...">
+                </div>
+
+                <div class="form-group mb-4">
                     <label for="picture">Ajouter une photo</label>
                     <input type="file" class="form-control-file" id="picture">
                 </div>
@@ -78,29 +79,22 @@
                     <label for="description">Description de votre signalement</label>
                     <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
                 </div>
+                <p> Vous êtes invité à vous identifier pour valider votre signalement. Votre signalement restera anonyme pour le professionnel. Seul la DGCCRF a accès à votre identité</p>
                 <div class="form-group">
                     <label for="name">Vos nom et prénom</label>
-                    <input class="form-control" id="name" placeholder="Jean Dupont">
+                    <input class="form-control" id="name" placeholder="Prénom Nom ...">
                 </div>
                 <div class="form-group mb-5">
                     <label for="email">Votre email </label>
-                    <input type="email" class="form-control" id="email" placeholder="john@gmail.com">
+                    <input type="email" class="form-control" id="email" placeholder="votreadresse@mail.fr">
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Signaler</button>
             </form>
         </div>
     </div>
-</div>
+</div><script src="<?php echo base_url() . "assets/js/jquery-3.3.1.min.js" ?>"></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<script src="<?php echo base_url() . "assets/js/bootstrap.min.js" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/chosen.jquery.min.js" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/main.js" ?>"></script>
 </body>

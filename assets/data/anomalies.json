@@ -1,0 +1,28 @@
+{
+  "café restaurant": {
+    "Hygiène": [
+      "Personnel sans coiffe ou gants",
+      "Restaurant sale",
+      "Présence de rat ou d'insecte",
+      "Problème de température (ex: vitrine réfrigérée)"
+    ],
+    "Nourriture" : [
+      "Malade suite à un repas",
+      "Plat de mauvaise qualité, pas frais ou pas bon",
+      "Même plat servi pendant plusieurs jours"
+    ],
+    "Prix" : [
+
+    ],
+    "Accueil et service" : [
+
+    ],
+    "Paiement" : [
+
+    ],
+    "Autres" : [
+
+    ]
+
+  }
+}
