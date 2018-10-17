@@ -37,7 +37,7 @@
                         <option selected></option>
                         <option value="Café / Restaurant">Café / Restaurant</option>
                         <option value="Grande surface / Supérette">Grande surface / Supérette</option>
-                        <option value="Boulanger / Boucher"> commerçant de proximité</option>
+                        <option value="Boulanger / Boucher">Commerçant de proximité</option>
                         <option value="Magasin non alimentaire">Magasin non alimentaire</option>
                     </select>
                 </div>
