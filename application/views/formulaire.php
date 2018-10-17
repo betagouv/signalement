@@ -28,21 +28,16 @@
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="font-weight-bold mb-3">Consommateurs, vous pouvez déposer un signalement afin de faire réagir les
-                professionnels et informer la DGCCRF
-            </p>
+            <p class="mb-4"><span class="font-weight-bold">Consommateurs, vous avez constaté une anomalie ? <br/>Vous pouvez déposer ici un signalement  afin d’informer simultanément le professionnel concerné et la DGCCRF </span><span class="font-italic">(Direction Général de la Concurrence, Consommation et Répression des Fraudes).</span><br/><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d'information.</span></p>
             <form>
+
                 <div class="form-group">
-                    <label for="place">Etablissement</label>
-                    <input class="form-control" id="place" placeholder="Nom du commerçant ...">
-                </div>
-                <div class="form-group">
-                    <label for="place-category">Quelle est la catégorie de cet établissement ? </label>
+                    <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                     <select class="form-control form-control-lg chosen-select" id="place-category" name="place-category" data-placeholder="Choisissez ...">
 
                         <option value="Café / Restaurant">Café / Restaurant</option>
                         <option value="Grande surface / Supérette">Grande surface / Supérette</option>
-                        <option value="Boulanger / Boucher">Boulanger / Boucher</option>
+                        <option value="Boulanger / Boucher"> commerçant de proximité</option>
                         <option value="Magasin non alimentaire">Magasin non alimentaire</option>
                     </select>
                 </div>
@@ -66,6 +61,10 @@
                         <option>Problème de température (ex: vitrine réfrigérée)</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="place">Etablissement</label>
+                    <input class="form-control" id="place" placeholder="Nom du commerçant ...">
+                </div>
                 <div class="form-group mb-4">
                     <label for="place-address">Adresse</label>
                     <input class="form-control" id="place-address" placeholder="numéro, rue et ville ...">
@@ -79,7 +78,7 @@
                     <label for="description">Description de votre signalement</label>
                     <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
                 </div>
-                <p> Vous êtes invité à vous identifier pour valider votre signalement. Votre signalement restera anonyme pour le professionnel. Seul la DGCCRF a accès à votre identité</p>
+                <p class="font-weight-bold">Votre identité ne sera pas indiqué au professionnel.</p>
                 <div class="form-group">
                     <label for="name">Vos nom et prénom</label>
                     <input class="form-control" id="name" placeholder="Prénom Nom ...">
