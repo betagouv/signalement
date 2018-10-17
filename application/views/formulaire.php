@@ -33,8 +33,8 @@
 
                 <div class="form-group">
                     <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
-                    <select class="form-control form-control-lg chosen-select" id="place-category" name="place-category" data-placeholder="Choisissez ...">
-
+                    <select class="form-control form-control-lg chosen-single-select" id="place-category" name="place-category" data-placeholder="Choisissez ...">
+                        <option selected></option>
                         <option value="Café / Restaurant">Café / Restaurant</option>
                         <option value="Grande surface / Supérette">Grande surface / Supérette</option>
                         <option value="Boulanger / Boucher"> commerçant de proximité</option>
@@ -43,7 +43,8 @@
                 </div>
                 <div class="form-group">
                     <label for="type">Quel type d'anomalie avez vous constaté ? </label>
-                    <select class="form-control form-control-lg chosen-select" id="type" name="type" data-placeholder="Choisissez ...">
+                    <select class="form-control form-control-lg chosen-single-select" id="type" name="type" data-placeholder="Choisissez ...">
+                        <option selected></option>
                         <option>Accueil</option>
                         <option>Paiement</option>
                         <option>Prix</option>
@@ -53,8 +54,9 @@
                 </div>
                 <div class="form-group mb-4">
                     <label for="anomalies">Précisez</label>
-                    <select class= "form-control form-control-lg chosen-select" id="anomalies" name="anomalies"
+                    <select class= "form-control form-control-lg chosen-single-select" id="anomalies" name="anomalies"
                             data-placeholder="Choisissez une anomalie ...">
+                        <option selected></option>
                         <option>Personnel sans coiffe ou gants</option>
                         <option>Restaurant sale</option>
                         <option>Présence de rat ou d'insecte</option>
