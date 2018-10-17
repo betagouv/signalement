@@ -28,7 +28,7 @@
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="mb-4"><span class="font-weight-bold">Consommateurs, vous avez constaté une anomalie ? <br/>Vous pouvez déposer ici un signalement  afin d’informer simultanément le professionnel concerné et la DGCCRF </span><span class="font-italic">(Direction Général de la Concurrence, Consommation et Répression des Fraudes).</span><br/><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d'information.</span></p>
+            <p class="mb-4"><span class="font-weight-bold">Consommateurs, vous avez constaté une anomalie ? Vous pouvez déposer ici un signalement  afin d’informer simultanément le professionnel concerné et la DGCCRF </span><span class="font-italic">(Direction Général de la Concurrence, Consommation et Répression des Fraudes).</span><br/><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d'information.</span></p>
             <form>
 
                 <div class="form-group">
