@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div id="logo-me-title-wrapper">
-                <img src="<?php echo base_url() . 'assets/images/ministere-economie.png'; ?>"
+                <img src="assets/images/ministere-economie.png"
                      alt="logo Ministère de l'Économie" class="m-3 mr-5" id="logo-DGCCRF"/>
 
                 <h1 class="align-middle text-center">Consommateurs, signalez une anomalie.</h1>
@@ -25,6 +25,9 @@
             <!-- <img src="<?php echo base_url() . 'assets/images/DGCCRF2011_184x76.jpg'; ?>" alt="logo DGCCRF" class="m-3" id="logo-me" />-->
         </div>
     </div>
+    <div class="header__ribbon do-not-print" id="header__ribbon">
+       BETA
+ </div>
 </header>
 <div class="container mb-5">
     <div class="row">
@@ -80,6 +83,7 @@
                     <input type="email" class="form-control" id="email" placeholder="votreadresse@mail.fr">
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Signaler</button>
+                      <p class="font-italic"></p>
             </form>
         </div>
     </div>
