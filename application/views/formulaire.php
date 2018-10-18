@@ -7,9 +7,9 @@
     <title>BetaGouv - Signalement</title>
 
 
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/bootstrap.min.css" ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/bootstrap-chosen.css" ?>"/>
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/css/style.css" ?>"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-chosen.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 <body>
@@ -85,9 +85,9 @@
     </div>
 </div>
 <script language="JavaScript">window.anomalies_array = <?php echo $anomalies_json; ?></script>
-<script src="<?php echo base_url() . "assets/js/jquery-3.3.1.min.js" ?>"></script>
-<script src="<?php echo base_url() . "assets/js/bootstrap.min.js" ?>"></script>
-<script src="<?php echo base_url() . "assets/js/chosen.jquery.min.js" ?>"></script>
-<script src="<?php echo base_url() . "assets/js/main.js" ?>"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/chosen.jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
