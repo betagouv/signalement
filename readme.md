@@ -12,3 +12,6 @@ Plus d'information ici : https://beta.gouv.fr/startup/signalement.html
    - LOG_THRESHOLD
 - Initialiser ou mettre à jour la base de donnée : `php index.php migrate`
    - La variable DATABASE_URL de base de donnée doit être configuré (`DATABASE_URL="posgres://user:password@localhost/signalement" php index.php migrate`)
+
+- mettre à jour les données chargées dans les menus déroulants "place-category", "type", "anomalies"
+modifier le fichier /assets/data/anomalies.csv (enregistrer avec séparater de champs ";" et séparateur de texte """
