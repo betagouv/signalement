@@ -32,10 +32,12 @@
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="mb-4">Vous pouvez <span class="font-weight-bold">déposer ici un signalement afin d’informer la DGCCRF</span> <span class="font-italic">(Direction Générale de la Concurrence, Consommation et Répression des Fraudes).</span> <br/>
-                <span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d’information</span>. Il ne déclenchera pas à lui seul un contrôle de l’établissement.</p>
+            <p class="mb-2">Vous pouvez <span class="font-weight-bold">déposer ici un signalement afin d’informer la DGCCRF</span> <span class="font-italic">(Direction Générale de la Concurrence, Consommation et Répression des Fraudes).</span> </p>
+            <p class="mb-2"> <span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement.</span> Il ne déclenchera pas à lui seul un contrôle de l’établissement.</p>
+            <p>Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter  <span class="font-weight-bold">votre signalement anonymisé.</span></p>
 
-                  <form>
+
+            <form>
                 <div class="form-group">
                     <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                     <select class="form-control form-control-lg chosen-single-select-nosearch" id="place-category" name="place-category" data-placeholder="Choisissez ...">
