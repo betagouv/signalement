@@ -2,6 +2,10 @@
 header {
     background-color: #e6e6ea;
 }
+body
+{
+    overflow-x: hidden;
+}
 
 #logo-DGCCRF {
     width: 120px;
@@ -31,6 +35,7 @@ header {
     font-size: 10px;
     font-weight: 700;
     z-index: 100;
+
 }
 
 /* FORM ------------------- */

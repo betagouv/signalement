@@ -23,11 +23,12 @@
                 <h1 class="align-middle text-center">Consommateurs, signalez une anomalie.</h1>
             </div>
             <!-- <img src="<?php echo base_url() . 'assets/images/DGCCRF2011_184x76.jpg'; ?>" alt="logo DGCCRF" class="m-3" id="logo-me" />-->
+            <div class="header__ribbon">
+                BETA
+            </div>
         </div>
     </div>
-    <div class="header__ribbon">
-       BETA
-     </div>
+
 </header>
 <div class="container mb-5">
     <div class="row">
@@ -37,7 +38,7 @@
             <p>Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter  <span class="font-weight-bold">votre signalement anonymisé.</span></p>
 
 
-            <form>
+            <form method="post" action="./">
                 <div class="form-group">
                     <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                     <select class="form-control form-control-lg chosen-single-select-nosearch" id="place-category" name="place-category" data-placeholder="Choisissez ...">
