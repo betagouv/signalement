@@ -4,7 +4,7 @@ header {
 }
 
 #logo-DGCCRF {
-    width:120px;
+    width: 120px;
 }
 
 #logo-me-title-wrapper {
@@ -15,9 +15,25 @@ header {
     display: inline-block;
 }
 
+/* Pour version  beta/démo */
+.header__ribbon {
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 90px;
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    z-index: 100;
+}
 
 /* FORM ------------------- */
-
 
 .btn {
     background-color: #0e4391;
@@ -26,7 +42,7 @@ header {
 
 .btn:hover,
 .btn:active,
-.btn:focus{
-    background-color: #0e4391!important;
+.btn:focus {
+    background-color: #0e4391 !important;
     opacity: 1;
 }
