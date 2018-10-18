@@ -82,8 +82,8 @@
                     <label for="email">Votre email </label>
                     <input type="email" class="form-control" id="email" placeholder="votreadresse@mail.fr">
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Signaler</button>
-                      <p class="font-italic"></p>
+                <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">Signaler</button>
+                      <p class="font-italic text-right"><small>Projet en cours d'expérimentation par la DGCCRF & Beta.Gouv</small></p>
             </form>
         </div>
     </div>
