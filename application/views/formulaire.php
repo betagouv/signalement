@@ -25,9 +25,9 @@
             <!-- <img src="<?php echo base_url() . 'assets/images/DGCCRF2011_184x76.jpg'; ?>" alt="logo DGCCRF" class="m-3" id="logo-me" />-->
         </div>
     </div>
-    <div class="header__ribbon do-not-print" id="header__ribbon">
+    <div class="header__ribbon">
        BETA
- </div>
+     </div>
 </header>
 <div class="container mb-5">
     <div class="row">

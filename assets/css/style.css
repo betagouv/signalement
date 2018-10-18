@@ -30,7 +30,7 @@ header {
     padding: 5px;
     font-size: 10px;
     font-weight: 700;
-    z-index: 10;
+    z-index: 100;
 }
 
 /* FORM ------------------- */
