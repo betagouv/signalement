@@ -6,7 +6,7 @@ class Formulaire extends CI_Controller {
 	{
 		$file = fopen("assets/data/anomalies.csv", "r");
 		$anomalies_array = array();
-		while($csv_array=fgetcsv($file,1024,';'))
+		while($csv_array=fgetcsv($file,1024,','))
 		{
 			$anomalies_array[] = $csv_array;
 		}
