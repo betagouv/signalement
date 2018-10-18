@@ -30,26 +30,17 @@
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
             <p class="mb-4"><span class="font-weight-bold">Consommateurs, vous avez constaté une anomalie ? Vous pouvez déposer ici un signalement  afin d’informer simultanément le professionnel concerné et la DGCCRF </span><span class="font-italic">(Direction Général de la Concurrence, Consommation et Répression des Fraudes).</span><br/><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d'information.</span></p>
             <form>
-
                 <div class="form-group">
                     <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                     <select class="form-control form-control-lg chosen-single-select" id="place-category" name="place-category" data-placeholder="Choisissez ...">
                         <option selected></option>
-                        <option value="Café / Restaurant">Café / Restaurant</option>
-                        <option value="Grande surface / Supérette">Grande surface / Supérette</option>
-                        <option value="Boulanger / Boucher">Commerçant de proximité</option>
-                        <option value="Magasin non alimentaire">Magasin non alimentaire</option>
+
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="type">Quel type d'anomalie avez vous constaté ? </label>
                     <select class="form-control form-control-lg chosen-single-select" id="type" name="type" data-placeholder="Choisissez ...">
                         <option selected></option>
-                        <option>Accueil</option>
-                        <option>Paiement</option>
-                        <option>Prix</option>
-                        <option>Produit</option>
-                        <option>Autre</option>
                     </select>
                 </div>
                 <div class="form-group mb-4">
@@ -57,10 +48,6 @@
                     <select class= "form-control form-control-lg chosen-single-select" id="anomalies" name="anomalies"
                             data-placeholder="Choisissez une anomalie ...">
                         <option selected></option>
-                        <option>Personnel sans coiffe ou gants</option>
-                        <option>Restaurant sale</option>
-                        <option>Présence de rat ou d'insecte</option>
-                        <option>Problème de température (ex: vitrine réfrigérée)</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -80,7 +67,7 @@
                     <label for="description">Description de votre signalement</label>
                     <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
                 </div>
-                <p class="font-weight-bold">Votre identité ne sera pas indiqué au professionnel.</p>
+                <p class="font-weight-bold">Votre identité ne sera pas indiquée au professionnel.</p>
                 <div class="form-group">
                     <label for="name">Vos nom et prénom</label>
                     <input class="form-control" id="name" placeholder="Prénom Nom ...">
@@ -93,8 +80,9 @@
             </form>
         </div>
     </div>
-</div><script src="<?php echo base_url() . "assets/js/jquery-3.3.1.min.js" ?>"></script>
-
+</div>
+<script language="JavaScript">window.anomalies_array = <?php echo $anomalies_json; ?></script>
+<script src="<?php echo base_url() . "assets/js/jquery-3.3.1.min.js" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/bootstrap.min.js" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/chosen.jquery.min.js" ?>"></script>
 <script src="<?php echo base_url() . "assets/js/main.js" ?>"></script>
