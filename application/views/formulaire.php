@@ -20,7 +20,7 @@
                 <img src="<?php echo base_url() . 'assets/images/ministere-economie.png'; ?>"
                      alt="logo Ministère de l'Économie" class="m-3 mr-5" id="logo-DGCCRF"/>
 
-                <h1 class="align-middle text-center">Signalement</h1>
+                <h1 class="align-middle text-center">Consommateurs, signalez une anomalie.</h1>
             </div>
             <!-- <img src="<?php echo base_url() . 'assets/images/DGCCRF2011_184x76.jpg'; ?>" alt="logo DGCCRF" class="m-3" id="logo-me" />-->
         </div>
@@ -29,8 +29,10 @@
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="mb-4"><span class="font-weight-bold">Consommateurs, vous avez constaté une anomalie ? Vous pouvez déposer ici un signalement  afin d’informer simultanément le professionnel concerné et la DGCCRF </span><span class="font-italic">(Direction Général de la Concurrence, Consommation et Répression des Fraudes).</span><br/><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d'information.</span></p>
-            <form>
+            <p class="mb-4">Vous pouvez <span class="font-weight-bold">déposer ici un signalement afin d’informer la DGCCRF</span> <span class="font-italic">(Direction Générale de la Concurrence, Consommation et Répression des Fraudes).</span> <br/>
+                <span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement, qui a vocation d’information</span>. Il ne déclenchera pas à lui seul un contrôle de l’établissement.</p>
+
+                  <form>
                 <div class="form-group">
                     <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                     <select class="form-control form-control-lg chosen-single-select-nosearch" id="place-category" name="place-category" data-placeholder="Choisissez ...">
