@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Formulaire extends CI_Controller {
 	public function index()
 	{
-		$file = fopen(base_url()."assets/data/anomalies.csv", "r");
+		$file = fopen("assets/data/anomalies.csv", "r");
 		$anomalies_array = array();
 		while($csv_array=fgetcsv($file,1024,';'))
 		{
