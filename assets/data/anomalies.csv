@@ -1,52 +1,52 @@
-"café restaurant";"Hygiène";"Personnel sans coiffe ou gants ";"INFO";
-"café restaurant";"Hygiène";"Restaurant sale";"DGCCRF";
-"café restaurant";"Hygiène";"Présence de rat ou d'insecte";"DGCCRF";
-"café restaurant";"Hygiène";"Problème de température (ex: vitrine réfrigérée)";"DGCCRF";
-"café restaurant";"Nourriture";"Malade suite à un repas";"DGCCRF";"(plainte?)"
-"café restaurant";"Nourriture";"Plat de mauvaise qualité, pas frais ou pas bon";"INFO";
-"café restaurant";"Nourriture";"Même plat servi pendant plusieurs jours";"INFO";
-"café restaurant";"Prix";"Absence d'affichage de prix ou absence de carte";"DGCCRF";
-"café restaurant";"Prix";"Prix trop cher";"INFO";
-"café restaurant";"Prix";"Prix payé différent de celui affiché";"DGCCRF";
-"café restaurant";"Prix";"Eau du robinet payante ou pain payant";"cas particulier";"x"
-"café restaurant";"Prix";"Facturation des couverts (ex: enfant)";"INFO";
-"café restaurant";"Prix";"Frais facturés non clairement indiqués avant";"DGCCRF";
-"café restaurant";"Prix";"Prix affiché sans TVA ou hors service compris";"DGCCRF";
-"café restaurant";"Accueil et service";"Bouteille de vin non débouchée devant vous";"DGCCRF";
-"café restaurant";"Accueil et service";"Bouteille de vin servie au verre non versée devant vous";"DGCCRF";"x"
-"café restaurant";"Accueil et service";"Refus de vous servir";"DGCCRF";
-"café restaurant";"Accueil et service";"Personnel peu aimable, comportement inapproprié";"INFO";
-"café restaurant";"Paiement";"Refus de remise d'une note";"DGCCRF";
-"café restaurant";"Paiement";"Refus d'un moyen de paiement non annoncé";"DGCCRF";"x"
-"café restaurant";"Autres";"Chien refusé";"INFO";
-"café restaurant";"Autres";"Publicité trompeuse, descriptif des plats trompeurs";;
-"café restaurant";"Autres";"Produits non-disponibles";"DGCCRF";"x"
-"grande surface et supérette";"Hygiène";"Personnel sans coiffe ou gants ";"INFO";
-"grande surface et supérette";"Hygiène";"Problème de saleté";"DGCCRF";
-"grande surface et supérette";"Hygiène";"Présence de rat / insecte / oiseau";"DGCCRF";
-"grande surface et supérette";"Hygiène";"Problème de température (ex: vitrine réfrigérée)";"DGCCRF";
-"grande surface et supérette";"Prix";"Absence de prix";"DGCCRF";
-"grande surface et supérette";"Prix";"Affichage des prix non lisible ou non visible";"DGCCRF";
-"grande surface et supérette";"Prix";"Prix trop cher";"INFO";
-"grande surface et supérette";"Prix";"Prix à la caisse différent de celui affiché";"DGCCRF";
-"grande surface et supérette";"Prix";"Frais facturés non annoncés à l'avance ";"DGCCRF";
-"grande surface et supérette";"Prix";"Prix affiché sans TVA ou pas en Euro";"DGCCRF";
-"grande surface et supérette";"Prix";"Problème de promotion, soldes";"DGCCRF";"X"
-"grande surface et supérette";"Produit alimentaire";"Date Limite de Consomation dépassée";"DGCCRF";
-"grande surface et supérette";"Produit alimentaire";"Absence de Date Limite de Consomation";"DGCCRF";
-"grande surface et supérette";"Produit alimentaire";"Intoxication, corps étranger";"DGCCRF";
-"grande surface et supérette";"Produit alimentaire";"Problème d'étiquetage ou absence d’étiquetage";"DGCCRF";
-"grande surface et supérette";"Produit alimentaire";"Qualité sanitaire des produits (ex: moississure)";"DGCCRF";"x"
-"grande surface et supérette";"Produit alimentaire";"Respect des quantités annoncés";"DGCCRF";
-"grande surface et supérette";"Produit alimentaire";"Vente de produit en retrait-rappel";"DGCCRF";
-"grande surface et supérette";"Produit non alimentaire";"Risque de danger avec un produit";"DGCCRF";
-"grande surface et supérette";"Produit non alimentaire";"Absence ou problème d’étiquetage du produit";"DGCCRF";
-"grande surface et supérette";"Produit non alimentaire";"Respect des quantités annoncés";"DGCCRF";
-"grande surface et supérette";"Produit non alimentaire";"Vente de produit en retrait-rappel";"DGCCRF";
-"grande surface et supérette";"Accueil";"Refus de vendre";"DGCCRF";
-"grande surface et supérette";"Accueil";"Personnel peu aimable, comportement inapproprié";"INFO";
-"grande surface et supérette";"Autres";"Refus d'un moyen de paiement non annoncé";"DGCCRF";
-"grande surface et supérette";"Autres";"Indisponibilité des produits du catalogue, publicité trompeuse";"DGCCRF";
+"Café restaurant";"Hygiène";"Personnel sans coiffe ou gants ";"INFO";
+"Café restaurant";"Hygiène";"Restaurant sale";"DGCCRF";
+"Café restaurant";"Hygiène";"Présence de rat ou d'insecte";"DGCCRF";
+"Café restaurant";"Hygiène";"Problème de température (ex: vitrine réfrigérée)";"DGCCRF";
+"Café restaurant";"Nourriture";"Malade suite à un repas";"DGCCRF";"(plainte?)"
+"Café restaurant";"Nourriture";"Plat de mauvaise qualité, pas frais ou pas bon";"INFO";
+"Café restaurant";"Nourriture";"Même plat servi pendant plusieurs jours";"INFO";
+"Café restaurant";"Prix";"Absence d'affichage de prix ou absence de carte";"DGCCRF";
+"Café restaurant";"Prix";"Prix trop cher";"INFO";
+"Café restaurant";"Prix";"Prix payé différent de celui affiché";"DGCCRF";
+"Café restaurant";"Prix";"Eau du robinet payante ou pain payant";"cas particulier";"x"
+"Café restaurant";"Prix";"Facturation des couverts (ex: enfant)";"INFO";
+"Café restaurant";"Prix";"Frais facturés non clairement indiqués avant";"DGCCRF";
+"Café restaurant";"Prix";"Prix affiché sans TVA ou hors service compris";"DGCCRF";
+"Café restaurant";"Accueil et service";"Bouteille de vin non débouchée devant vous";"DGCCRF";
+"Café restaurant";"Accueil et service";"Bouteille de vin servie au verre non versée devant vous";"DGCCRF";"x"
+"Café restaurant";"Accueil et service";"Refus de vous servir";"DGCCRF";
+"Café restaurant";"Accueil et service";"Personnel peu aimable, comportement inapproprié";"INFO";
+"Café restaurant";"Paiement";"Refus de remise d'une note";"DGCCRF";
+"Café restaurant";"Paiement";"Refus d'un moyen de paiement non annoncé";"DGCCRF";"x"
+"Café restaurant";"Autres";"Chien refusé";"INFO";
+"Café restaurant";"Autres";"Publicité trompeuse, descriptif des plats trompeurs";;
+"Café restaurant";"Autres";"Produits non-disponibles";"DGCCRF";"x"
+"Grande surface et supérette";"Hygiène";"Personnel sans coiffe ou gants ";"INFO";
+"Grande surface et supérette";"Hygiène";"Problème de saleté";"DGCCRF";
+"Grande surface et supérette";"Hygiène";"Présence de rat / insecte / oiseau";"DGCCRF";
+"Grande surface et supérette";"Hygiène";"Problème de température (ex: vitrine réfrigérée)";"DGCCRF";
+"Grande surface et supérette";"Prix";"Absence de prix";"DGCCRF";
+"Grande surface et supérette";"Prix";"Affichage des prix non lisible ou non visible";"DGCCRF";
+"Grande surface et supérette";"Prix";"Prix trop cher";"INFO";
+"Grande surface et supérette";"Prix";"Prix à la caisse différent de celui affiché";"DGCCRF";
+"Grande surface et supérette";"Prix";"Frais facturés non annoncés à l'avance ";"DGCCRF";
+"Grande surface et supérette";"Prix";"Prix affiché sans TVA ou pas en Euro";"DGCCRF";
+"Grande surface et supérette";"Prix";"Problème de promotion, soldes";"DGCCRF";"X"
+"Grande surface et supérette";"Produit alimentaire";"Date Limite de Consomation dépassée";"DGCCRF";
+"Grande surface et supérette";"Produit alimentaire";"Absence de Date Limite de Consomation";"DGCCRF";
+"Grande surface et supérette";"Produit alimentaire";"Intoxication, corps étranger";"DGCCRF";
+"Grande surface et supérette";"Produit alimentaire";"Problème d'étiquetage ou absence d’étiquetage";"DGCCRF";
+"Grande surface et supérette";"Produit alimentaire";"Qualité sanitaire des produits (ex: moississure)";"DGCCRF";"x"
+"Grande surface et supérette";"Produit alimentaire";"Respect des quantités annoncés";"DGCCRF";
+"Grande surface et supérette";"Produit alimentaire";"Vente de produit en retrait-rappel";"DGCCRF";
+"Grande surface et supérette";"Produit non alimentaire";"Risque de danger avec un produit";"DGCCRF";
+"Grande surface et supérette";"Produit non alimentaire";"Absence ou problème d’étiquetage du produit";"DGCCRF";
+"Grande surface et supérette";"Produit non alimentaire";"Respect des quantités annoncés";"DGCCRF";
+"Grande surface et supérette";"Produit non alimentaire";"Vente de produit en retrait-rappel";"DGCCRF";
+"Grande surface et supérette";"Accueil";"Refus de vendre";"DGCCRF";
+"Grande surface et supérette";"Accueil";"Personnel peu aimable, comportement inapproprié";"INFO";
+"Grande surface et supérette";"Autres";"Refus d'un moyen de paiement non annoncé";"DGCCRF";
+"Grande surface et supérette";"Autres";"Indisponibilité des produits du catalogue, publicité trompeuse";"DGCCRF";
 "Commerçant de proximité";"Prix";"Absence de prix";"DGCCRF";
 "Commerçant de proximité";"Prix";"Affichage des prix non lisible ou non visible";"DGCCRF";
 "Commerçant de proximité";"Prix";"Prix trop cher";"INFO";
