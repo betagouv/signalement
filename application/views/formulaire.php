@@ -3,6 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>BetaGouv - Signalement</title>
 
 
@@ -32,14 +33,14 @@
             <form>
                 <div class="form-group">
                     <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
-                    <select class="form-control form-control-lg chosen-single-select" id="place-category" name="place-category" data-placeholder="Choisissez ...">
+                    <select class="form-control form-control-lg chosen-single-select-nosearch" id="place-category" name="place-category" data-placeholder="Choisissez ...">
                         <option selected></option>
 
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="type">Quel type d'anomalie avez vous constaté ? </label>
-                    <select class="form-control form-control-lg chosen-single-select" id="type" name="type" data-placeholder="Choisissez ...">
+                    <select class="form-control form-control-lg chosen-single-select-nosearch" id="type" name="type" data-placeholder="Choisissez ...">
                         <option selected></option>
                     </select>
                 </div>
@@ -64,7 +65,7 @@
                     <input type="file" class="form-control-file" id="picture">
                 </div>
                 <div class="form-grou mb-4">
-                    <label for="description">Description de votre signalement</label>
+                    <label for="description">Précision de votre signalement</label>
                     <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
                 </div>
                 <p class="font-weight-bold">Votre identité ne sera pas indiquée au professionnel.</p>

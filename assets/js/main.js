@@ -1,5 +1,4 @@
 
-
 jQuery(document).ready(function ($) {
 
    // chgt du mesnu déroulants catégorie d'établissement
@@ -10,8 +9,6 @@ jQuery(document).ready(function ($) {
         $('#place-category').append('<option value="'+window.anomalies_array[cpt][0]+'">'+window.anomalies_array[cpt][0]+'</option>');
       previous = window.anomalies_array[cpt][0];
    }
-
-
 
    // rechargement du menu déroulant "type" en fonction de "place-category"
    $('#place-category').change(function() {
@@ -32,7 +29,7 @@ jQuery(document).ready(function ($) {
       $('#anomalies').html("<option selected></option>");
       for (cpt = 0; cpt < window.anomalies_array.length;cpt++)
       {
-         if ((previous != window.anomalies_array[cpt][2])&&(window.anomalies_array[cpt][1] == $('#type').val()))
+         if ((previous != window.anomalies_array[cpt][2])&&(window.anomalies_array[cpt][1] == $('#type').val())&&(window.anomalies_array[cpt][0] == $('#place-category').val()))
             $('#anomalies').append('<option value="'+window.anomalies_array[cpt][2]+'">'+window.anomalies_array[cpt][2]+'</option>');
          previous = window.anomalies_array[cpt][2];
       }
@@ -40,9 +37,8 @@ jQuery(document).ready(function ($) {
    });
 
 
-
-
    // Génération des menus déroulants avec système de recherche
-   $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true,});
+   $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
 
+   $('.chosen-single-select-nosearch').chosen({width: '100%', allow_single_deselect: true,disable_search :true});
 });
