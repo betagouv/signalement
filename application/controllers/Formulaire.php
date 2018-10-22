@@ -10,9 +10,13 @@ class Formulaire extends CI_Controller {
 		{
 			$anomalies_array[] = $csv_array;
 		}
-
-
 		$data['anomalies_json'] = json_encode($anomalies_array);
+
+
+		if (isset($_POST['anomalies'])) {
+			echo 'test';
+		}
+
 		$this->load->view('formulaire',$data);
 	}
 }
