@@ -4,6 +4,8 @@
 "Café restaurant","Hygiène","Problème de température (ex: vitrine réfrigérée)","DGCCRF",
 "Café restaurant","Nourriture","Malade suite à un repas","DGCCRF","(plainte?)"
 "Café restaurant","Nourriture","Plat de mauvaise qualité, pas frais ou pas bon","INFO",
+"Café restaurant","Paiement","Refus de remise d'une note","DGCCRF",
+"Café restaurant","Paiement","Refus d'un moyen de paiement non annoncé","DGCCRF","x"
 "Café restaurant","Prix","Absence d'affichage de prix ou absence de carte","DGCCRF",
 "Café restaurant","Prix","Prix trop cher","INFO",
 "Café restaurant","Prix","Prix payé différent de celui affiché","DGCCRF",
@@ -15,10 +17,8 @@
 "Café restaurant","Autres","Bouteille de vin servie au verre non versée devant vous","DGCCRF","x"
 "Café restaurant","Autres","Refus de vous servir","DGCCRF",
 "Café restaurant","Autres","Personnel peu aimable, comportement inapproprié","INFO",
-"Café restaurant","Paiement","Refus de remise d'une note","DGCCRF",
-"Café restaurant","Paiement","Refus d'un moyen de paiement non annoncé","DGCCRF","x"
 "Café restaurant","Autres","Chien refusé","INFO",
-"Café restaurant","Autres","Publicité trompeuse, descriptif des plats trompeurs",
+"Café restaurant","Autres","Publicité trompeuse, descriptif des plats trompeurs",,
 "Café restaurant","Autres","Produits non-disponibles","DGCCRF","x"
 "Grande surface et supérette","Hygiène","Personnel sans coiffe ou gants ","INFO",
 "Grande surface et supérette","Hygiène","Problème de saleté","DGCCRF",
@@ -46,12 +46,6 @@
 "Grande surface et supérette","Autres","Personnel peu aimable, comportement inapproprié","INFO",
 "Grande surface et supérette","Autres","Refus d'un moyen de paiement non annoncé","DGCCRF",
 "Grande surface et supérette","Autres","Indisponibilité des produits du catalogue, publicité trompeuse","DGCCRF",
-"Commerçant de proximité (boulangerie, boucherie...)","Prix","Absence de prix","DGCCRF",
-"Commerçant de proximité (boulangerie, boucherie...)","Prix","Affichage des prix non lisible ou non visible","DGCCRF",
-"Commerçant de proximité (boulangerie, boucherie...)","Prix","Prix trop cher","INFO",
-"Commerçant de proximité","Prix","Prix à la caisse différent de celui affiché","DGCCRF",
-"Commerçant de proximité (boulangerie, boucherie...)","Prix","Frais facturé non annoncé à l'avance","DGCCRF",
-"Commerçant de proximité (boulangerie, boucherie...)","Prix","Prix hors tva ou en monnaie étrangère","DGCCRF",
 "Commerçant de proximité (boulangerie, boucherie...)","Hygiène","Personnel sans coiffe ou gants","INFO",
 "Commerçant de proximité (boulangerie, boucherie...)","Hygiène","Magasin sale","DGCCRF",
 "Commerçant de proximité (boulangerie, boucherie...)","Hygiène","Présence de rat / insecte / oiseau","DGCCRF",
@@ -61,6 +55,12 @@
 "Commerçant de proximité (boulangerie, boucherie...)","Produit alimentaire","Etiquetage non-conforme (absence ingrédients, des allergènes, de date limite, pas en langue française..) / absence d’étiquetage","DGCCRF",
 "Commerçant de proximité (boulangerie, boucherie...)","Produit alimentaire","Qualité sanitaire des produits (moississure)","DGCCRF",
 "Commerçant de proximité (boulangerie, boucherie...)","Produit alimentaire","Métrologie (respect de poids, volume annoncé)","DGCCRF",
+"Commerçant de proximité (boulangerie, boucherie...)","Prix","Absence de prix","DGCCRF",
+"Commerçant de proximité (boulangerie, boucherie...)","Prix","Affichage des prix non lisible ou non visible","DGCCRF",
+"Commerçant de proximité (boulangerie, boucherie...)","Prix","Prix trop cher","INFO",
+"Commerçant de proximité (boulangerie, boucherie...)","Prix","Prix à la caisse différent de celui affiché","DGCCRF",
+"Commerçant de proximité (boulangerie, boucherie...)","Prix","Frais facturé non annoncé à l'avance","DGCCRF",
+"Commerçant de proximité (boulangerie, boucherie...)","Prix","Prix hors tva ou en monnaie étrangère","DGCCRF",
 "Commerçant de proximité (boulangerie, boucherie...)","Autres","Refus de servir","DGCCRF",
 "Commerçant de proximité (boulangerie, boucherie...)","Autres","Personnable peu aimable, mal poli","INFO",
 "Commerçant de proximité (boulangerie, boucherie...)","Autres","Refus d'un moyen de paiement","DGCCRF",
