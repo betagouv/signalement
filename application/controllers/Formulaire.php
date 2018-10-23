@@ -49,12 +49,17 @@ class Formulaire extends CI_Controller {
 
 		if ($this->form_validation->run())
 		{
-			$this->load->view('formulaire/submitted');
+			$data['submit'] = 1;
+			$this->load->view('header');
+			$this->load->view('valid',$data);
+
 		}
 		else
 		{
 			$data['anomalies_array'] = $this-> readCSV();
+			$this->load->view('header');
 			$this->load->view('formulaire',$data);
+			$this->load->view('footer');
 		}
 	}
 
