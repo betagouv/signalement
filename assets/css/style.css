@@ -1,3 +1,8 @@
+/* PAGE ------------------- */
+.intro {
+    font-size: 1.1em;
+}
+
 /* HEADER ------------------- */
 header {
     background-color: #e6e6ea;
@@ -50,4 +55,11 @@ body
 .btn:focus {
     background-color: #0e4391 !important;
     opacity: 1;
+}
+
+.invalid {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
 }
