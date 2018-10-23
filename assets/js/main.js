@@ -1,7 +1,5 @@
 
 jQuery(document).ready(function ($) {
-
-   // chgt du mesnu deroulants categorie d'etablissement
    var previous;
 
    // rechargement du menu deroulant "type" en fonction de "place-category"
@@ -30,12 +28,15 @@ jQuery(document).ready(function ($) {
       $('#anomalies').trigger("chosen:updated");
    });
 
+   // suppression du message de validation à la saisie
+   $('form input').focus(function(){
+     $(this).parent('.form-group').children('.invalid').hide(500);
+   });
+   $('form select').change(function(){
+      $(this).parent('.form-group').children('.invalid').hide(500);
+   });
 
    // Generation des menus deroulants avec systeme de recherche
    $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
-
    $('.chosen-single-select-nosearch').chosen({width: '100%', allow_single_deselect: true,disable_search :true});
-
-
-
 });
