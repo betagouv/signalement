@@ -14,4 +14,5 @@ Plus d'information ici : https://beta.gouv.fr/startup/signalement.html
    - La variable DATABASE_URL de base de donnée doit être configuré (`DATABASE_URL="posgres://user:password@localhost/signalement" php index.php migrate`)
 
 - mettre à jour les données chargées dans les menus déroulants "place-category", "type", "anomalies"
-modifier le fichier /assets/data/anomalies.csv (enregistrer avec séparater de champs ";" et séparateur de texte """
+modifier le fichier /assets/data/anomalies.csv (enregistrer avec séparater de champs "," et séparateur de texte """
+Il faut  que tous les noms soient parfaitement identiques pour que cela fonctionne bien + Il faut aussi que tous les éléments d'un même type ou catégorie se suivent.
