@@ -19,7 +19,7 @@ class Reports_model extends CI_Model {
     }
 
     public function addReport() {
-        $id = '';
+        $id = uniqid();
         $place = $this->input->post('place');
         $place_address = $this->input->post('place_address');
         $place_category = $this->input->post('place_category');
