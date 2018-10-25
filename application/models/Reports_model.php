@@ -3,6 +3,7 @@
 class Reports_model extends CI_Model {
 
     protected $table = 'reports';
+    private $id;
     private $place;
     private $place_address;
     private $place_category;
@@ -18,6 +19,7 @@ class Reports_model extends CI_Model {
     }
 
     public function addReport() {
+        $id = '';
         $place = $this->input->post('place');
         $place_address = $this->input->post('place_address');
         $place_category = $this->input->post('place_category');
