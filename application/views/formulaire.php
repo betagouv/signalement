@@ -20,8 +20,7 @@
                     </button>
                 </div>
             <?php } ?>
-
-            <?php echo form_open_multipart('./'); ?>
+            <form action="./" enctype="multipart/form-data" method="post" accept-charset="utf-8">
             <div class="form-group">
                 <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
@@ -124,7 +123,7 @@
             <p class="font-italic text-right">
                 <small>Projet en cours d'expérimentation par la DGCCRF & Beta.Gouv</small>
             </p>
-            <?php echo form_close(); ?>
+            </form>
         </div>
     </div>
 </div>
