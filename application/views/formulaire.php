@@ -21,7 +21,7 @@
                 </div>
             <?php } ?>
 
-            <?php echo form_open_multipart(base_url()); ?>
+            <?php echo form_open_multipart('./'); ?>
             <div class="form-group">
                 <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
