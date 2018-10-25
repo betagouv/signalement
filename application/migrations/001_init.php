@@ -13,10 +13,10 @@ class Migration_Init extends CI_Migration {
                         'place' => array(
                                 'type' => 'TEXT'
                         ),
-                        'place-address' => array(
+                        'place_address' => array(
                                 'type' => 'TEXT'
                         ),
-                        'place-category' => array(
+                        'place_category' => array(
                                 'type' => 'TEXT'
                         ),
                         'type' => array(

@@ -12,6 +12,15 @@
 
             <p class="mb-5 intro"><span class="font-weight-bold">Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter votre signalement (sans votre identité).</span>
             </p>
+            <?php if(isset($error)) { ?>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Erreur de base de données</strong>. Veuillez renouveler la soumission du formulaire
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php } ?>
+
             <?php echo form_open_multipart(base_url()); ?>
             <div class="form-group">
                 <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>

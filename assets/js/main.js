@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
       $(this).parent('.form-group').children('.invalid').hide(500);
    });
 
-   // Generation des menus deroulants avec systeme de recherche
+   // Generation des menus deroulants avec systeme de recherche / sans
    $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
    $('.chosen-single-select-nosearch').chosen({width: '100%', allow_single_deselect: true,disable_search :true});
 });
