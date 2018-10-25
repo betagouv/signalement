@@ -45,14 +45,11 @@ class Formulaire extends CI_Controller {
 
 		$this->form_validation->set_rules($config);
 
-		$this->form_validation->set_message('place-category', 'Error Message');
 
 		if ($this->form_validation->run())
 		{
-			$data['submit'] = 1;
 			$this->load->view('header');
-			$this->load->view('valid',$data);
-
+			$this->load->view('valid');
 		}
 		else
 		{
