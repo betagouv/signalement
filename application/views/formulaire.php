@@ -1,100 +1,122 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BetaGouv - Signalement</title>
-
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/bootstrap-chosen.css"/>
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-</head>
-<body>
-<header class="mb-4">
-    <div class="container">
-        <div class="row">
-            <div id="logo-me-title-wrapper">
-                <img src="assets/images/ministere-economie.png"
-                     alt="logo Ministère de l'Économie" class="m-3 mr-5" id="logo-DGCCRF"/>
-
-                <h1 class="align-middle text-center">Consommateurs, signalez une anomalie.</h1>
-            </div>
-            <!-- <img src="<?php echo base_url() . 'assets/images/DGCCRF2011_184x76.jpg'; ?>" alt="logo DGCCRF" class="m-3" id="logo-me" />-->
-            <div class="header__ribbon">
-                BETA
-            </div>
-        </div>
-    </div>
-
-</header>
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="mb-2">Vous pouvez <span class="font-weight-bold">déposer ici un signalement afin d’informer la DGCCRF</span> <span class="font-italic">(Direction Générale de la Concurrence, Consommation et Répression des Fraudes).</span> </p>
-            <p class="mb-2"> <span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement.</span> Il ne déclenchera pas à lui seul un contrôle de l’établissement.</p>
-            <p>Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter  <span class="font-weight-bold">votre signalement anonymisé.</span></p>
+
+            <?php ?>
+            <p class="mb-2 intro"><span class="font-weight-bold">Vous pouvez déposer ici un signalement afin d’informer la DGCCRF</span>
+                <span class="font-italic">(Direction Générale de la Concurrence, Consommation et Répression des Fraudes).</span>
+            </p>
+
+            <p class="mb-2 intro"><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement.</span>
+                Il ne déclenchera pas à lui seul un contrôle de l’établissement.</p>
+
+            <p class="mb-5 intro"><span class="font-weight-bold">Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter votre signalement (sans votre identité).</span>
+            </p>
+            <?php echo form_open_multipart(base_url()); ?>
+            <div class="form-group">
+                <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
+                <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
+                        id="place-category" name="place-category" data-placeholder="Choisissez ...">
+                    <option selected></option>
+                    <?php
+                    $previous = "";
+                    for ($i = 0; isset($anomalies_array[$i]); $i++) {
+
+                        if ($previous != $anomalies_array[$i][0]) {
+                            echo '<option value="' . $anomalies_array[$i][0] . '"';
+                            if ((isset($_POST['place-category'])) && ($anomalies_array[$i][0] == $_POST['place-category']))
+                                echo ' selected';
+                            echo '>' . $anomalies_array[$i][0] . '</option>';
+                        }
 
 
-            <form method="post" action="./">
-                <div class="form-group">
-                    <label for="place-category">Quel type d'établissement souhaitez vous signaler ? </label>
-                    <select class="form-control form-control-lg chosen-single-select-nosearch" id="place-category" name="place-category" data-placeholder="Choisissez ...">
-                        <option selected></option>
+                        $previous = $anomalies_array[$i][0];
 
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="type">Quel type d'anomalie avez vous constaté ? </label>
-                    <select class="form-control form-control-lg chosen-single-select-nosearch" id="type" name="type" data-placeholder="Choisissez ...">
-                        <option selected></option>
-                    </select>
-                </div>
-                <div class="form-group mb-4">
-                    <label for="anomalies">Précisez</label>
-                    <select class= "form-control form-control-lg chosen-single-select" id="anomalies" name="anomalies"
-                            data-placeholder="Choisissez une anomalie ...">
-                        <option selected></option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="place">Etablissement</label>
-                    <input class="form-control" id="place" placeholder="Nom du commerçant ...">
-                </div>
-                <div class="form-group mb-4">
-                    <label for="place-address">Adresse</label>
-                    <input class="form-control" id="place-address" placeholder="numéro, rue et ville ...">
-                </div>
+                    } ?>
+                </select>
+                <?php echo form_error('place-category', '<div class="invalid">', '</div>'); ?>
+            </div>
+            <div class="form-group">
+                <label for="type">Quel type d'anomalie avez vous constaté ? </label>
+                <select class="form-control form-control-lg chosen-single-select-nosearch" id="type" name="type"
+                        data-placeholder="Choisissez ...">
+                    <option selected></option>
+                    <?php
+                    if ((isset($_POST['place-category'])) && ($_POST['place-category'] != ''))
+                        for ($i = 0; isset($anomalies_array[$i]); $i++) {
+                            if (($previous != $anomalies_array[$i][1])&&($anomalies_array[$i][0]==$_POST['place-category'])) {
+                                echo '<option value="' . $anomalies_array[$i][1] . '"';
+                                if ($anomalies_array[$i][1] == $_POST['type'])
+                                    echo ' selected';
+                                echo '>' . $anomalies_array[$i][1] . '</option>';
+                            }
+                            $previous = $anomalies_array[$i][1];
+                        } ?>
+                </select>
+                <?php echo form_error('type', '<div class="invalid">', '</div>'); ?>
+            </div>
+            <div class="form-group mb-4">
+                <label for="anomalies">Précisez</label>
+                <select class="form-control form-control-lg chosen-single-select" id="anomalies" name="anomalies"
+                        data-placeholder="Choisissez une anomalie ...">
+                    <option selected></option>
+                    <?php
+                    if ((isset($_POST['type'])) && ($_POST['type'] != ''))
+                        for ($i = 0; isset($anomalies_array[$i]); $i++) {
+                            if (($previous != $anomalies_array[$i][2])&&($anomalies_array[$i][1]==$_POST['type'])&&($anomalies_array[$i][0]==$_POST['place-category'])) {
+                                echo '<option value="' . $anomalies_array[$i][2] . '"';
+                                if ($anomalies_array[$i][2] == $_POST['anomalies'])
+                                    echo ' selected';
+                                echo '>' . $anomalies_array[$i][2] . '</option>';
+                            }
+                            $previous = $anomalies_array[$i][2];
+                        } ?>
+                </select>
+                <?php echo form_error('anomalies', '<div class="invalid">', '</div>'); ?>
+            </div>
+            <div class="form-group">
+                <label for="place">Etablissement</label>
+                <input class="form-control" id="place" name="place" placeholder="Nom du commerçant ..."
+                       value="<?php echo set_value('place'); ?>">
+                <?php echo form_error('place', '<div class="invalid">', '</div>'); ?>
+            </div>
+            <div class="form-group mb-4">
+                <label for="place-address">Adresse</label>
+                <input class="form-control" name="place-address" id="place-address"
+                       placeholder="numéro, rue et ville ..." value="<?php echo set_value('place-address'); ?>">
+                <?php echo form_error('place-address', '<div class="invalid">', '</div>'); ?>
+            </div>
 
-                <div class="form-group mb-4">
-                    <label for="picture">Ajouter une photo</label>
-                    <input type="file" class="form-control-file" id="picture">
-                </div>
-                <div class="form-grou mb-4">
-                    <label for="description">Précision de votre signalement</label>
-                    <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="200 caractères maximum"></textarea>
-                </div>
-                <p class="font-weight-bold">Votre identité ne sera pas indiquée au professionnel.</p>
-                <div class="form-group">
-                    <label for="name">Vos nom et prénom</label>
-                    <input class="form-control" id="name" placeholder="Prénom Nom ...">
-                </div>
-                <div class="form-group mb-5">
-                    <label for="email">Votre email </label>
-                    <input type="email" class="form-control" id="email" placeholder="votreadresse@mail.fr">
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">Signaler</button>
-                      <p class="font-italic text-right"><small>Projet en cours d'expérimentation par la DGCCRF & Beta.Gouv</small></p>
-            </form>
+            <div class="form-group mb-4">
+                <label for="picture">Ajouter une photo</label>
+                <input type="file" class="form-control-file" name="picture" id="picture"
+                       value="<?php echo set_value('picture'); ?>">
+            </div>
+            <div class="form-grou mb-4">
+                <label for="description">Précision de votre signalement</label>
+                <textarea class="form-control" name="description" id="description" rows="3" maxlength="200"
+                          placeholder="200 caractères maximum"> <?php echo set_value('description'); ?></textarea>
+            </div>
+            <p class="font-weight-bold">Votre identité ne sera pas indiquée au professionnel.</p>
+
+            <div class="form-group">
+                <label for="name">Vos prénom et nom</label>
+                <input class="form-control" name="name" id="name" placeholder="Prénom Nom ..."
+                       value="<?php echo set_value('name'); ?>">
+                <?php echo form_error('name', '<div class="invalid">', '</div>'); ?>
+            </div>
+            <div class="form-group mb-5">
+                <label for="email">Votre email </label>
+                <input class="form-control" id="email" name="email" placeholder="votreadresse@mail.fr"
+                       value="<?php echo set_value('email'); ?>">
+                <?php echo form_error('email', '<div class="invalid">', '</div>'); ?>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">Signaler</button>
+            <p class="font-italic text-right">
+                <small>Projet en cours d'expérimentation par la DGCCRF & Beta.Gouv</small>
+            </p>
+            <?php echo form_close(); ?>
         </div>
     </div>
 </div>
-<script language="JavaScript">window.anomalies_array = <?php echo $anomalies_json; ?></script>
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/chosen.jquery.min.js"></script>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<script language="JavaScript">window.anomalies_array = <?php echo json_encode($anomalies_array); ?></script>

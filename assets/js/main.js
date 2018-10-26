@@ -1,16 +1,8 @@
 
 jQuery(document).ready(function ($) {
-
-   // chgt du mesnu déroulants catégorie d'établissement
    var previous;
-   for (cpt = 0; cpt < window.anomalies_array.length;cpt++)
-   {
-     if (previous != window.anomalies_array[cpt][0])
-        $('#place-category').append('<option value="'+window.anomalies_array[cpt][0]+'">'+window.anomalies_array[cpt][0]+'</option>');
-      previous = window.anomalies_array[cpt][0];
-   }
 
-   // rechargement du menu déroulant "type" en fonction de "place-category"
+   // rechargement du menu deroulant "type" en fonction de "place-category"
    $('#place-category').change(function() {
       $('#type').html("<option selected></option>");
       $('#anomalies').html("<option selected></option>");
@@ -24,7 +16,7 @@ jQuery(document).ready(function ($) {
       $('#anomalies').trigger("chosen:updated");
    });
 
-   // rechargement du menu déroulant "anomalies" en fonction de "type"
+   // rechargement du menu deroulant "anomalies" en fonction de "type"
    $('#type').change(function() {
       $('#anomalies').html("<option selected></option>");
       for (cpt = 0; cpt < window.anomalies_array.length;cpt++)
@@ -36,9 +28,15 @@ jQuery(document).ready(function ($) {
       $('#anomalies').trigger("chosen:updated");
    });
 
+   // suppression du message de validation Ã  la saisie
+   $('form input').focus(function(){
+     $(this).parent('.form-group').children('.invalid').hide(500);
+   });
+   $('form select').change(function(){
+      $(this).parent('.form-group').children('.invalid').hide(500);
+   });
 
-   // Génération des menus déroulants avec système de recherche
+   // Generation des menus deroulants avec systeme de recherche
    $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
-
    $('.chosen-single-select-nosearch').chosen({width: '100%', allow_single_deselect: true,disable_search :true});
 });
