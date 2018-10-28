@@ -32,8 +32,11 @@ class Migration_Init extends CI_Migration {
                                 'type' => 'TEXT',
                                 'null' => TRUE,
                         ),
-                        'name' => array(
-                                'type' => 'TEXT'
+                        'firstname' => array(
+                        'type' => 'TEXT'
+                        ),
+                        'lastname' => array(
+                        'type' => 'TEXT'
                         ),
                         'email' => array(
                                 'type' => 'TEXT'
