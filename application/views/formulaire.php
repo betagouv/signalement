@@ -96,7 +96,7 @@
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <label for="firstname">Votre prénom</label>
+                        <label for="firstname">Votre prénom <span>*</span></label>
                         <input type="text" class="form-control" name="firstname" id="firstname"
                                value="<?php echo set_value('firstname'); ?>">
                         <?php echo form_error('firstname', '<div class="invalid">', '</div>'); ?>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col">
                     <div class="form-group">
-                        <label for="lastname">Votre nom</label>
+                        <label for="lastname">Votre nom <span>*</span></label>
                         <input type="text" class="form-control" name="lastname" id="lastname"
                                value="<?php echo set_value('lastname'); ?>">
                         <?php echo form_error('lastname', '<div class="invalid">', '</div>'); ?>
@@ -113,7 +113,7 @@
 
             </div>
             <div class="form-group mb-5">
-                <label for="email">Votre email </label>
+                <label for="email">Votre email <span>*</span></label>
                 <input class="form-control" id="email" name="email" value="<?php echo set_value('email'); ?>">
                 <?php echo form_error('email', '<div class="invalid">', '</div>'); ?>
             </div>
