@@ -6,7 +6,7 @@
 
             <p class="mb-5 intro"><span class="font-weight-bold">Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter votre signalement anonymisé.</span>
             </p>
-            <?php echo form_open_multipart(); ?>
+            <?php echo form_open_multipart(base_url()); ?>
             <div class="form-group">
                 <label for="place-category">Quel type d'établissement souhaitez vous signaler ? <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
