@@ -12,19 +12,12 @@ body
     overflow-x: hidden;
 }
 
-#logo-DGCCRF {
+#logo-me {
     width: 120px;
 }
 
-#logo-me-title-wrapper {
-    display: table-cell;
-}
 
-#logo-me-title-wrapper h1 {
-    display: inline-block;
-}
-
-/* Pour version  beta/démo */
+/* Pour version  beta/dï¿½mo */
 .header__ribbon {
     text-align: center;
     text-transform: uppercase;
@@ -62,4 +55,8 @@ body
     margin-top: .25rem;
     font-size: 80%;
     color: #dc3545;
+}
+
+label span {
+    color:#0e4391;
 }
