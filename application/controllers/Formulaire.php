@@ -32,8 +32,13 @@ class Formulaire extends CI_Controller {
 				'rules' => 'required'
 			),
 			array(
-				'field' => 'name',
-				'label' => 'Prénom et nom',
+				'field' => 'firstname',
+				'label' => 'Prénom',
+				'rules' => 'required'
+			),
+			array(
+				'field' => 'lastname',
+				'label' => 'Nom',
 				'rules' => 'required'
 			),
 			array(
