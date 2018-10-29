@@ -7,7 +7,7 @@ class Formulaire extends CI_Controller {
 	{
 		$config = array(
 			array(
-				'field' => 'place-category',
+				'field' => 'place_category',
 				'label' => 'Type d\'établissement',
 				'rules' => 'required'
 			),
@@ -27,13 +27,18 @@ class Formulaire extends CI_Controller {
 				'rules' => 'required'
 			),
 			array(
-				'field' => 'place-address',
+				'field' => 'place_address',
 				'label' => 'Adresse de l\'établissement',
 				'rules' => 'required'
 			),
 			array(
-				'field' => 'name',
-				'label' => 'Prénom et nom',
+				'field' => 'firstname',
+				'label' => 'Prénom',
+				'rules' => 'required'
+			),
+			array(
+				'field' => 'lastname',
+				'label' => 'Nom',
 				'rules' => 'required'
 			),
 			array(

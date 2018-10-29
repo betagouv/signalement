@@ -6,17 +6,20 @@ class Migration_Init extends CI_Migration {
 
         public function up()
         {
+
                 $this->dbforge->add_field(array(
+
                         'id' => array(
-                                'type' => 'UUID'
+                                'type' => 'int',
+                                'auto_increment' => TRUE
                         ),
                         'place' => array(
                                 'type' => 'TEXT'
                         ),
-                        'place-address' => array(
+                        'place_address' => array(
                                 'type' => 'TEXT'
                         ),
-                        'place-category' => array(
+                        'place_category' => array(
                                 'type' => 'TEXT'
                         ),
                         'type' => array(
@@ -30,10 +33,13 @@ class Migration_Init extends CI_Migration {
                         ),
                         'description' => array(
                                 'type' => 'TEXT',
-                                'null' => TRUE,
+                                'null' => TRUE
                         ),
-                        'name' => array(
-                                'type' => 'TEXT'
+                        'firstname' => array(
+                        'type' => 'TEXT'
+                        ),
+                        'lastname' => array(
+                        'type' => 'TEXT'
                         ),
                         'email' => array(
                                 'type' => 'TEXT'
