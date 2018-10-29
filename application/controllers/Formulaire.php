@@ -53,8 +53,13 @@ class Formulaire extends CI_Controller {
 
 		if ($this->form_validation->run())
 		{
-			$this->load->view('header');
-			$this->load->view('valid');
+			$this->load->model('reports_model');
+			if ($this->reports_model->addReport()){
+				$this->load->view('header');
+				$this->load->view('valid');
+			} else {
+				$data['error'] = true;
+			}
 		}
 		else
 		{
