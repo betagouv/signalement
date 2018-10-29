@@ -2,13 +2,13 @@
 jQuery(document).ready(function ($) {
    var previous;
 
-   // rechargement du menu deroulant "type" en fonction de "place-category"
-   $('#place-category').change(function() {
+   // rechargement du menu deroulant "type" en fonction de "place_category"
+   $('#place_category').change(function() {
       $('#type').html("<option selected></option>");
       $('#anomalies').html("<option selected></option>");
       for (cpt = 0; cpt < window.anomalies_array.length;cpt++)
       {
-         if ((previous != window.anomalies_array[cpt][1])&&(window.anomalies_array[cpt][0] == $('#place-category').val()))
+         if ((previous != window.anomalies_array[cpt][1])&&(window.anomalies_array[cpt][0] == $('#place_category').val()))
             $('#type').append('<option value="'+window.anomalies_array[cpt][1]+'">'+window.anomalies_array[cpt][1]+'</option>');
          previous = window.anomalies_array[cpt][1];
       }
@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
       $('#anomalies').html("<option selected></option>");
       for (cpt = 0; cpt < window.anomalies_array.length;cpt++)
       {
-         if ((previous != window.anomalies_array[cpt][2])&&(window.anomalies_array[cpt][1] == $('#type').val())&&(window.anomalies_array[cpt][0] == $('#place-category').val()))
+         if ((previous != window.anomalies_array[cpt][2])&&(window.anomalies_array[cpt][1] == $('#type').val())&&(window.anomalies_array[cpt][0] == $('#place_category').val()))
             $('#anomalies').append('<option value="'+window.anomalies_array[cpt][2]+'">'+window.anomalies_array[cpt][2]+'</option>');
          previous = window.anomalies_array[cpt][2];
       }

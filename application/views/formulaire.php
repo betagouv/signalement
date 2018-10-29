@@ -8,9 +8,9 @@
             </p>
             <?php echo form_open_multipart(base_url()); ?>
             <div class="form-group">
-                <label for="place-category">Quel type d'établissement souhaitez vous signaler ? <span>*</span></label>
+                <label for="place_category">Sélectionnez d'abord le type d'établissement que vous souhaitez signaler <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
-                        id="place-category" name="place-category" data-placeholder="Choisissez ...">
+                        id="place_category" name="place_category" data-placeholder="Choisissez ...">
                     <option selected></option>
                     <?php
                     $previous = "";
@@ -18,7 +18,7 @@
 
                         if ($previous != $anomalies_array[$i][0]) {
                             echo '<option value="' . $anomalies_array[$i][0] . '"';
-                            if ((isset($_POST['place-category'])) && ($anomalies_array[$i][0] == $_POST['place-category']))
+                            if ((isset($_POST['place_category'])) && ($anomalies_array[$i][0] == $_POST['place_category']))
                                 echo ' selected';
                             echo '>' . $anomalies_array[$i][0] . '</option>';
                         }
@@ -28,17 +28,17 @@
 
                     } ?>
                 </select>
-                <?php echo form_error('place-category', '<div class="invalid">', '</div>'); ?>
+                <?php echo form_error('place_category', '<div class="invalid">', '</div>'); ?>
             </div>
-            <div class="form-group">
-                <label for="type">Quel type d'anomalie avez vous constaté ? <span>*</span></label>
+            <div class="form-group<?php ((!isset($_POST['place_category']))||($_POST['place_category'] == ''))? ' d-none': ''; ?>">
+                <label for="type">Puis, indiquez le type d'anomalie que vous avez constaté <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch" id="type" name="type"
                         data-placeholder="Choisissez ...">
                     <option selected></option>
                     <?php
-                    if ((isset($_POST['place-category'])) && ($_POST['place-category'] != ''))
+                    if ((isset($_POST['place_category'])) && ($_POST['place_category'] != ''))
                         for ($i = 0; isset($anomalies_array[$i]); $i++) {
-                            if (($previous != $anomalies_array[$i][1]) && ($anomalies_array[$i][0] == $_POST['place-category'])) {
+                            if (($previous != $anomalies_array[$i][1]) && ($anomalies_array[$i][0] == $_POST['place_category'])) {
                                 echo '<option value="' . $anomalies_array[$i][1] . '"';
                                 if ($anomalies_array[$i][1] == $_POST['type'])
                                     echo ' selected';
@@ -49,15 +49,15 @@
                 </select>
                 <?php echo form_error('type', '<div class="invalid">', '</div>'); ?>
             </div>
-            <div class="form-group mb-5">
-                <label for="anomalies">Précisez <span>*</span></label>
+            <div class="form-group mb-5<?php ((isset($_POST['type']))&&($_POST['type'] != ''))? : ' d-none' ; ?>">
+                <label for="anomalies">Précisez enfin l'anomalie <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select" id="anomalies" name="anomalies"
                         data-placeholder="Choisissez une anomalie ...">
                     <option selected></option>
                     <?php
                     if ((isset($_POST['type'])) && ($_POST['type'] != ''))
                         for ($i = 0; isset($anomalies_array[$i]); $i++) {
-                            if (($previous != $anomalies_array[$i][2]) && ($anomalies_array[$i][1] == $_POST['type']) && ($anomalies_array[$i][0] == $_POST['place-category'])) {
+                            if (($previous != $anomalies_array[$i][2]) && ($anomalies_array[$i][1] == $_POST['type']) && ($anomalies_array[$i][0] == $_POST['place_category'])) {
                                 echo '<option value="' . $anomalies_array[$i][2] . '"';
                                 if ($anomalies_array[$i][2] == $_POST['anomalies'])
                                     echo ' selected';
@@ -74,10 +74,10 @@
                 <?php echo form_error('place', '<div class="invalid">', '</div>'); ?>
             </div>
             <div class="form-group mb-4">
-                <label for="place-address">Adresse de l'établissement <span>*</span></label>
-                <input class="form-control" name="place-address" id="place-address"
-                       value="<?php echo set_value('place-address'); ?>">
-                <?php echo form_error('place-address', '<div class="invalid">', '</div>'); ?>
+                <label for="place_address">Adresse de l'établissement <span>*</span></label>
+                <input class="form-control" name="place_address" id="place_address"
+                       value="<?php echo set_value('place_address'); ?>">
+                <?php echo form_error('place_address', '<div class="invalid">', '</div>'); ?>
             </div>
 
             <div class="form-group mb-4">
