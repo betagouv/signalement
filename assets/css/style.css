@@ -60,3 +60,7 @@ body
 label span {
     color:#e00917;
 }
+
+.none {
+    display: none;
+}

@@ -30,7 +30,7 @@
                 </select>
                 <?php echo form_error('place_category', '<div class="invalid">', '</div>'); ?>
             </div>
-            <div class="form-group<?php ((!isset($_POST['place_category']))||($_POST['place_category'] == ''))? ' d-none': ''; ?>">
+            <div class="form-group<?php echo ((!isset($_POST['place_category']))||($_POST['place_category'] == ''))? ' none': ''; ?>">
                 <label for="type">Puis, indiquez le type d'anomalie que vous avez constaté <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch" id="type" name="type"
                         data-placeholder="Choisissez ...">
@@ -49,7 +49,7 @@
                 </select>
                 <?php echo form_error('type', '<div class="invalid">', '</div>'); ?>
             </div>
-            <div class="form-group mb-5<?php ((isset($_POST['type']))&&($_POST['type'] != ''))? : ' d-none' ; ?>">
+            <div class="form-group<?php echo ((!isset($_POST['type']))||($_POST['type'] == ''))? ' none': ''; ?>">
                 <label for="anomalies">Précisez enfin l'anomalie <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select" id="anomalies" name="anomalies"
                         data-placeholder="Choisissez une anomalie ...">
@@ -68,7 +68,7 @@
                 </select>
                 <?php echo form_error('anomalies', '<div class="invalid">', '</div>'); ?>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-5">
                 <label for="place">Nom de l'établissement <span>*</span></label>
                 <input class="form-control" id="place" name="place" value="<?php echo set_value('place'); ?>">
                 <?php echo form_error('place', '<div class="invalid">', '</div>'); ?>

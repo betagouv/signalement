@@ -14,6 +14,10 @@ jQuery(document).ready(function ($) {
       }
       $('#type').trigger("chosen:updated");
       $('#anomalies').trigger("chosen:updated");
+
+      if ($('#type').parent('.form-group').hasClass('none')){
+         $('#type').parent('.form-group').show(500);
+      }
    });
 
    // rechargement du menu deroulant "anomalies" en fonction de "type"
@@ -26,7 +30,11 @@ jQuery(document).ready(function ($) {
          previous = window.anomalies_array[cpt][2];
       }
       $('#anomalies').trigger("chosen:updated");
+      if ($('#anomalies').parent('.form-group').hasClass('none')){
+         $('#anomalies').parent('.form-group').show(500);
+      }
    });
+
 
    // suppression du message de validation à la saisie
    $('form input').focus(function(){
@@ -35,6 +43,7 @@ jQuery(document).ready(function ($) {
    $('form select').change(function(){
       $(this).parent('.form-group').children('.invalid').hide(500);
    });
+
 
    // Generation des menus deroulants avec systeme de recherche
    $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
