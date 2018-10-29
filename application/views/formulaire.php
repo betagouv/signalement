@@ -6,6 +6,14 @@
 
             <p class="mb-5 intro"><span class="font-weight-bold">Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter votre signalement anonymisé.</span>
             </p>
+            <?php if(isset($error)) { ?>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Erreur de base de données</strong>. Veuillez renouveler la soumission du formulaire
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php } ?>
             <?php echo form_open_multipart(base_url()); ?>
             <div class="form-group">
                 <label for="place_category">Sélectionnez d'abord le type d'établissement que vous souhaitez signaler <span>*</span></label>
@@ -81,8 +89,8 @@
             </div>
 
             <div class="form-group mb-4">
-                <label for="picture">Vous pouvez ajouter une photo</label>
-                <input type="file" class="form-control-file" name="picture" id="picture"
+                <label for="pictures">Vous pouvez ajouter une photo</label>
+                <input type="file" class="form-control-file" name="pictures" id="pictures"
                        value="<?php echo set_value('picture'); ?>">
             </div>
             <div class="form-group mb-5">
