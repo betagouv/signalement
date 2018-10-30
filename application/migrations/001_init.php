@@ -29,7 +29,8 @@ class Migration_Init extends CI_Migration {
                                 'type' => 'TEXT[]'
                         ),
                         'pictures' => array(
-                                'type' => 'OID[]'
+                                'type' => 'OID[]',
+                                'null' => TRUE
                         ),
                         'description' => array(
                                 'type' => 'TEXT',
