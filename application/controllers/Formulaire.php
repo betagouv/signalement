@@ -5,9 +5,6 @@ class Formulaire extends CI_Controller {
 
 	public function index()
 		{
-
-
-
 			$config = array(
 				array(
 					'field' => 'place_category',
@@ -54,15 +51,18 @@ class Formulaire extends CI_Controller {
 			$this->form_validation->set_rules($config);
 
 
-			if ($this->form_validation->run())
-			{
-				$config['upload_path'] = './tmpuploads/';
+			if (isset($_POST['pictures'])) {
 				$config['allowed_types'] = 'gif|jpg|png|pdf';
 				$config['max_size']     = '10240';
 
 				$this->load->library('upload', $config);
 
 				echo $this->upload->data('full_path');
+
+			}
+
+			/*if ($this->form_validation->run())
+			{
 
 
 				$this->load->model('reports_model');
@@ -74,12 +74,12 @@ class Formulaire extends CI_Controller {
 				}
 			}
 			else
-			{
+			{*/
 				$data['anomalies_array'] = $this-> readCSV();
 				$this->load->view('header');
 				$this->load->view('formulaire',$data);
 				$this->load->view('footer');
-			}
+			//}
 		}
 
 	private function readCSV(){
