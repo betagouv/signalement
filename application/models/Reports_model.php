@@ -10,6 +10,9 @@ class Reports_model extends CI_Model {
     }
 
     public function addReport() {
+        // TODO : ajout pathname
+        $oid =  $this->db->call_function('pg_lo_import', $this->db->conn_id, $pathname);
+
         $data = array(
             'place' =>  $this->input->post('place'),
             'place_address' => $this->input->post('place_address'),
@@ -17,12 +20,13 @@ class Reports_model extends CI_Model {
             'type' => $this->input->post('type'),
             'anomalies' => addslashes(json_encode(array($this->input->post('anomalies')),JSON_FORCE_OBJECT)),
            // 'pictures' =>  json_encode(array($this->input->post('pictures')),JSON_FORCE_OBJECT),
-
             'description' => $this->input->post('description'),
             'firstname' => $this->input->post('firstname'),
             'lastname' => $this->input->post('lastname'),
             'email' => $this->input->post('email')
         );
+
+
 
 
         return $this->db->insert($this->table, $data);
