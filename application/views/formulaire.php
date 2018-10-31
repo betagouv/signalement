@@ -91,7 +91,7 @@
             <div class="form-group mb-4">
                 <label for="pictures">Vous pouvez ajouter une photo</label>
                 <input type="file" class="form-control-file" name="pictures" id="pictures"
-                       value="<?php echo set_value('picture'); ?>">
+                       value="<?php echo set_value('pictures'); ?>">
             </div>
             <div class="form-group mb-5">
                 <label for="description">Vous pouvez préciser votre signalement</label>

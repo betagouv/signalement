@@ -5,7 +5,7 @@ class Formulaire extends CI_Controller {
 
 	public function index()
 		{
-			$config = array(
+		/*	$config = array(
 				array(
 					'field' => 'place_category',
 					'label' => 'Type d\'établissement',
@@ -50,16 +50,26 @@ class Formulaire extends CI_Controller {
 
 			$this->form_validation->set_rules($config);
 
+*/
+if (isset($_POST['place_category'])) {
+	$config['allowed_types'] = 'gif|jpg|png|pdf';
+	$config['max_size']     = '10240';
 
-			if (isset($_POST['pictures'])) {
+	$this->load->library('upload', $config);
+	echo			$this->upload->data('file_name');
+				$this->upload->do_upload('test');
+
+			/*	echo "test";
 				$config['allowed_types'] = 'gif|jpg|png|pdf';
 				$config['max_size']     = '10240';
 
 				$this->load->library('upload', $config);
 
-				echo $this->upload->data('full_path');
+				echo "test";
+				echo $this->upload->data('file_name');
+*/
 
-			}
+}
 
 			/*if ($this->form_validation->run())
 			{
