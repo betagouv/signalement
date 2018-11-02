@@ -24,6 +24,8 @@ class Formulaire extends CI_Controller
                 {
                     $data['error_uploads'] = $this->upload->display_errors();
                     $uploaded = false;
+                } else {
+                    $full_path = $this->upload->data('full_path');
                 }
             }
             $config = array(
