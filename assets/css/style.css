@@ -38,14 +38,13 @@ body
 /* FORM ------------------- */
 
 .btn {
-    background-color: #0e4391;
+    background-color: #0e4391!important;
     opacity: 0.8;
 }
 
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background-color: #0e4391 !important;
     opacity: 1;
 }
 

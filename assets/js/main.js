@@ -48,4 +48,11 @@ jQuery(document).ready(function ($) {
    // Generation des menus deroulants avec systeme de recherche
    $('.chosen-single-select').chosen({width: '100%', allow_single_deselect: true});
    $('.chosen-single-select-nosearch').chosen({width: '100%', allow_single_deselect: true,disable_search :true});
+
+
+   // bouton de validation disabled
+   $('form').submit(function(){
+      $('button').html('Envoi en cours ...');
+      $('button').prop('disabled', true);
+   });
 });
