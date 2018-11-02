@@ -7,7 +7,7 @@ class Migrate extends CI_Controller {
     {
         parent::__construct();
 
-        $this->input->is_cli_request()
+       $this->input->is_cli_request()
         or exit("Execute via command line: php index.php migrate");
 
         $this->load->library('migration');
