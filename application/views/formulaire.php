@@ -89,7 +89,7 @@
             </div>
 
             <div class="form-group mb-4">
-                <label for="pictures">Vous pouvez ajouter une photo</label>
+                <label for="pictures">Vous pouvez ajouter une photo (jpg,png,gif,pdf)</label>
                 <input type="file" class="form-control-file" name="pictures" id="pictures"
                        value="<?php echo set_value('pictures'); ?>">
                 <?php echo (isset($error_uploads)) ? '<div class="invalid">'.$error_uploads.'</div>':''; ?>

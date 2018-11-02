@@ -1,15 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
-
 class Formulaire extends CI_Controller
 {
-
     public function index()
     {
-        if (isset($_POST['place_category'])) {
+        $form = true;
+        $uploaded = true;
+        $this->load->view('header');
 
+        if (isset($_POST['place_category'])) {
             $full_path = '';
             // chargement du fichier
             if ($_FILES['pictures']['name'] != '') {
@@ -20,14 +20,12 @@ class Formulaire extends CI_Controller
                 $config['max_size'] = '10240000';
                 $this->load->library('upload', $config);
 
-                if (!$this->upload->do_upload('pictures')) {
+                if (!$this->upload->do_upload('pictures'))
+                {
                     $data['error_uploads'] = $this->upload->display_errors();
-                    $this->make_form();
-                } else {
-                    $full_path = $this->upload->data('full_path');
+                    $uploaded = false;
                 }
             }
-
             $config = array(
                 array(
                     'field' => 'place_category',
@@ -74,31 +72,30 @@ class Formulaire extends CI_Controller
             $this->form_validation->set_rules($config);
 
 
-            if ($this->form_validation->run()) {
+            if (($this->form_validation->run())&&($uploaded)) {
                 $this->load->model('reports_model');
                 if ($this->reports_model->addReport($full_path)) {
-                    $this->load->view('header');
                     $this->load->view('valid');
+                    $form = false;
                 } else {
                     $data['error'] = true;
-                    $this->make_form();
                 }
-            } else
-                $this->make_form();
-        } else
-            $this->make_form();
-    }
-
-    private function make_form(){
-        $file = fopen("assets/data/anomalies.csv", "r");
-
-        while ($csv_array = fgetcsv($file, 1024, ','))
-            $data['anomalies_array'][] = $csv_array;
-
-        $this->load->view('header');
-        $this->load->view('formulaire',$data);
+            }
+        }
+        if ($form)
+        {
+            $data['anomalies_array'] = $this->getAnomalies();
+            $this->load->view('formulaire',$data);
+        }
         $this->load->view('footer');
     }
 
+    private function getAnomalies(){
+        $file = fopen("assets/data/anomalies.csv", "r");
 
+        while ($csv_array = fgetcsv($file, 1024, ','))
+           $anomalies_array[] = $csv_array;
+
+        return $anomalies_array;
+    }
 }
