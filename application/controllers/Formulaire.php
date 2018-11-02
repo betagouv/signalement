@@ -79,6 +79,8 @@ class Formulaire extends CI_Controller
                 if ($this->reports_model->addReport($full_path)) {
                     $this->load->view('valid');
                     $form = false;
+                    if (file_exists($full_path))
+                        unlink($full_path);
                 } else {
                     $data['error'] = true;
                 }
