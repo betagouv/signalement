@@ -19,7 +19,7 @@ En fonction du niveau de gravité, votre signalement pourra déclencher un trait
             <?php } ?>
             <?php echo form_open_multipart(base_url()); ?>
             <div class="form-group">
-                <label for="place_category">Sélectionnez d'abord le type d'établissement que vous souhaitez signaler <span>*</span></label>
+                <label for="place_category">Sélectionnez d'abord le type de professionnel conserné par le signalement <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
                         id="place_category" name="place_category" data-placeholder="Choisissez ...">
                     <option selected></option>
@@ -80,12 +80,12 @@ En fonction du niveau de gravité, votre signalement pourra déclencher un trait
                 <?php echo form_error('anomalies', '<div class="invalid">', '</div>'); ?>
             </div>
             <div class="form-group mt-5">
-                <label for="place">Nom de l'établissement <span>*</span></label>
+                <label for="place">Nom du professionnel <span>*</span></label>
                 <input class="form-control" id="place" name="place" value="<?php echo set_value('place'); ?>">
                 <?php echo form_error('place', '<div class="invalid">', '</div>'); ?>
             </div>
             <div class="form-group mb-4">
-                <label for="place_address">Adresse de l'établissement <span>*</span></label>
+                <label for="place_address">Adresse du professionnel <span>*</span></label>
                 <input class="form-control" name="place_address" id="place_address"
                        value="<?php echo set_value('place_address'); ?>">
                 <?php echo form_error('place_address', '<div class="invalid">', '</div>'); ?>
