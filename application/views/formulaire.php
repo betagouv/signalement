@@ -1,11 +1,14 @@
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="mb-2 intro"><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement.
-                Il ne déclenchera pas à lui seul un contrôle des autorités.</span></p>
+             <p class="mb-5 intro"><span class="font-weight-bold">Votre signalement doit permettre de résoudre l'anomalie constatée. 
+                 Il sera transmis de manière anonymisée au professionnel afin de corriger lui-même l’anomalie.</span>
+          
+            <p class="mb-2 intro"><span class="font-weight-bold">
+En fonction du niveau de gravité, votre signalement pourra déclencher un traitement immédiat de la part des services de contrôle.
+                </span></p>
 
-            <p class="mb-5 intro"><span class="font-weight-bold">Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter votre signalement anonymisé.</span>
-            </p>
+             </p>
             <?php if(isset($error)) { ?>
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
                     <strong>Erreur de base de données</strong>. Veuillez renouveler la soumission du formulaire
