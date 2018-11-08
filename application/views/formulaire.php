@@ -1,11 +1,14 @@
 <div class="container mb-5">
     <div class="row">
         <div class="offset-lg-2 col-lg-8 col-sm-12 pb-3">
-            <p class="mb-2 intro"><span class="font-weight-bold">Vous ne serez pas contacté à la suite de votre signalement.
-                Il ne déclenchera pas à lui seul un contrôle des autorités.</span></p>
+             <p class="mb-5 intro"><span class="font-weight-bold">Votre signalement doit permettre de résoudre l'anomalie constatée. 
+                 Il sera transmis de manière anonymisée au professionnel afin de corriger lui-même l’anomalie.</span>
+          
+            <p class="mb-2 intro"><span class="font-weight-bold">
+En fonction du niveau de gravité, votre signalement pourra déclencher un traitement immédiat de la part des services de contrôle.
+                </span></p>
 
-            <p class="mb-5 intro"><span class="font-weight-bold">Afin de corriger lui-même l’anomalie, le professionnel pourra aussi consulter votre signalement anonymisé.</span>
-            </p>
+             </p>
             <?php if(isset($error)) { ?>
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
                     <strong>Erreur de base de données</strong>. Veuillez renouveler la soumission du formulaire
@@ -16,7 +19,7 @@
             <?php } ?>
             <?php echo form_open_multipart(base_url()); ?>
             <div class="form-group">
-                <label for="place_category">Sélectionnez d'abord le type d'établissement que vous souhaitez signaler <span>*</span></label>
+                <label for="place_category">Sélectionnez d'abord le type de professionnel conserné par le signalement <span>*</span></label>
                 <select class="form-control form-control-lg chosen-single-select-nosearch is_invalid"
                         id="place_category" name="place_category" data-placeholder="Choisissez ...">
                     <option selected></option>
@@ -77,12 +80,12 @@
                 <?php echo form_error('anomalies', '<div class="invalid">', '</div>'); ?>
             </div>
             <div class="form-group mt-5">
-                <label for="place">Nom de l'établissement <span>*</span></label>
+                <label for="place">Nom du professionnel <span>*</span></label>
                 <input class="form-control" id="place" name="place" value="<?php echo set_value('place'); ?>">
                 <?php echo form_error('place', '<div class="invalid">', '</div>'); ?>
             </div>
             <div class="form-group mb-4">
-                <label for="place_address">Adresse de l'établissement <span>*</span></label>
+                <label for="place_address">Adresse du professionnel <span>*</span></label>
                 <input class="form-control" name="place_address" id="place_address"
                        value="<?php echo set_value('place_address'); ?>">
                 <?php echo form_error('place_address', '<div class="invalid">', '</div>'); ?>
